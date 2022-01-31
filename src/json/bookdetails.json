@@ -1,0 +1,59 @@
+
+{
+    "books": [
+      {
+        "id": 1,
+        "title": "Being boss",
+        "author": "Kathleen Shannon and Emily",
+        "time": "20",
+        "category": "Entrepreneurship",
+        "image": "https://s3-alpha-sig.figma.com/img/d6ff/11bb/88b0e65d07ed5e88976fd6ef79c2890d?Expires=1644192000&Signature=THtMXJ-xrp-~f2vDM9QBit1gnvAyOErlkxQPamGfqxOk2s2mNVCeR-HkJ~3gkTFNk-oI7GmqbBeYnJzaGoOPUexUlbPG8xCp7mqSrcTeXW7JBcK7ZFcrIDEPsjfT~r0hpAbwejdN~6~Fmk9x8oIB~hLgaFtQbOf5TBuXRYUc17wkigKybB9CXE1wMjCjtmmwxfnYaImTzcDXgf9katMogyoNRexJUn29S~pDdXpo0EWUDM4aH4lnffxyQXPy-2P~Ir~7-RTH9DCB1dwGP6l9SXCv9TJBL5n6cjSf0OEOkB7thw0pofCbWM3FXyET~LnO0rkENH3b6USK0MY4Ej6Bow__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        "status": "notstarted"
+      },
+      {
+        "id": 2,
+        "title": "Beyond Entrepreneurship",
+        "author": "Jim Collins & Bill Lazier",
+        "time": "20",
+        "category": "Entrepreneurship",
+        "image": "https://s3-alpha-sig.figma.com/img/9ef8/4879/159f1a8fdf9dafb9b0fd0b3a69170efb?Expires=1644192000&Signature=ak7iEv9B9bDCU9DG0vXZ58zKo6aWQqGiScw3oe-tGZLMXbSfxdm4ESgqJKZpt6~LeT3fH2CNkeUs-b-uva-RK7E-RJyBw0MVEEU6l86ZxN7KQAlrGGvinJpiUnGXlRM~cRloLiA-IVEnlp6nNvImKQ~FY5tlxseuEbCX423YsCxK4R~31AHmannLrFHTgwJmUGsax9awMI1zmhC2sl-P7njqG5j0Fy6CtuONNnSosSrXdEGmIryAq1NZtp1p4ZveWppm58EaPw~m3fr5YothXA68d4~1kDGGRvYXohkAbCYmeVV3b1qzye2-oerketeVH8wH-dYbLM1hEzzyqK3x2A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        "status": "notstarted"
+      },
+      {
+        "id": 3,
+        "title": "Employee to Entrepreneur",
+        "author": "Steve Glaveski",
+        "time": "19",
+        "category": "Entrepreneurship",
+        "image": "https://s3-alpha-sig.figma.com/img/3e9a/001d/986c218c11bd0e5acb50c36d5e3ce117?Expires=1644192000&Signature=D4jVsZmBeJGN6cdp4J2-Y~8tsBSncOE0d4Yq~3w9qIFGhf9AeQsGq1~-l1YyFplFMI~nXSt9Wq6lr8Sb2PRbalWUTZ8-uRENgtHhdGOs7dVo4IiQLW~IW7Ufk2Ufco7buPNOvkhklaVKlf9lcKU7mA04Ouzs60BgWUz-qqiqHxjqhEf-ktEicLoSsZGrWB2pw3NLRFyx9J2FA-L1kkYuG0Z1QMT5-BkE2KzJMKXqBFiadQnRKPu-hmCbBk09kf3KbSws-dP0V8a0YNwSNUnSodpkzrwwOQLO9qRIBH5A7lmTXna3Gi9n8OrBgz1VJkn9P9foUC0x9EuaexmVbA2iEw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        "status": "notstarted"
+      },
+      {
+        "id": 4,
+        "title": "The Fate of Food",
+        "author": "Amanda Little",
+        "time": "19",
+        "category": "Politics",
+        "image": "https://s3-alpha-sig.figma.com/img/a029/7cf3/8283a77df75b8b9996b5539a7e94c40c?Expires=1644192000&Signature=WRaoGr8N3WBhXtjH9h3tQ0nreOvJDPV8plQgCm27FKy6KD9zd5Tj8gzHG1NhUvsbSYn14yaJ13Gs~aZOxhVq2J2hI3Cs2jgOdETYJSOHswDav8pVpXI5KLpGd-MuZc8Cx5l30qCX9YxQz1--t~IJBqBTsDquZPDXB8CkzfTW4D9kkZXD6aDIk~zGwyiAEroVJMAewdRkK~ZcqdJhww~SKAGIW4oLosL~2Kl4Dbm6NSt4WV~Y2ycWDdDt5u4nvbNbBWlezrwYgmDPswRgA8JZbeWHzz9OUUhhcnrZwsHHClnIVZBaHBftsYYFcnWAlWCBxh-uGyqTup7MRxVP8Y~tGg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        "status": "notstarted"
+      },
+      {
+        "id": 5,
+        "title": "Eat Better, Feel Better",
+        "author": "Giada De Laurentiis",
+        "time": "19",
+        "category": "Politics",
+        "image": "https://s3-alpha-sig.figma.com/img/a8fa/012a/eea7424ebbc307ee55ae23ab1b355ce2?Expires=1644192000&Signature=LnSWCcHlMGM7mSH0kSbjQfwRYVabZfuCMrleKQnSJTRAxUcBeJ7WnHQFA-L77RJ9oBCRkh7knKG8zYv~HJiLQ1zMqsfoG6B9uCRkTl8oEKai51BYS2wP1qW-H92~dqxlfJsHkRO6n4KsBzTmVTbH8oZivCY~Ucvng8W9pBaweQYw2cfgFxVtEdDjJ7rW80hcES9HNiiVroE1PT-SfiIPw8hRSGjx6fz4h-r~MLynUvqqfwJQbhYBb9QKTLsg7Lvjl-xCek~emYdFm1bL-ew0T1tH5Ik9BIYgg~3dOSnxLN-6vWJ3m0gLMfCjY1KCItp~WTZYWJGejwshIfx1s8Y-Iw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        "status": "notstarted"
+      },
+      {
+        "id": 6,
+        "title": "Dropshipping",
+        "author": "James Moore",
+        "time": "19",
+        "category": "Politics",
+        "image": "https://s3-alpha-sig.figma.com/img/643d/d789/e66ced625e5439bacbcbe2128c0f2303?Expires=1644192000&Signature=cS-oeNDwhVsrKm7kRyaObXSoMh4bUjQbUgapkxG33sZrf8cfs5chjZ0mNhlJIfD1Xr8RcxEOuqJe55vyBt3rhDAGNebbRPVJgKpDX5K0hQYvvS61tOZyfO6MdczAcEqH4~FE6-nzDlwyNZPAT3f9pUMvDId3wVVPwfK14Y6AMenkMHjFDRnME~vtEURwcHD8QovfD~eFJq1IfZdWGOoUhP9n43I2BN0BPt-ewi29GapoiJftBU2DgsQEe~46vuQ4g07q7PDEAbV0V6-OMcdENRidfLTgERcPL0z8rB3pqGYJBDaKNupziWXVougx6YPOBt77ka4zuvryqy92f~S2qg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        "status": "notstarted"
+      }
+    ]
+}

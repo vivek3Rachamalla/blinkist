@@ -1,0 +1,24 @@
+
+
+.card-style{
+    height: 466px;
+    width: 284px;
+    left: 0px;
+    top: 0px;
+    border-color: black;
+}
+
+.book-title{
+    color: #03314B;
+    padding: 4px;
+}
+
+.book-author{
+    color: #6D787E;
+    padding: 4px;
+}
+
+.threeDots{
+    float: right;
+    color: black;
+}
