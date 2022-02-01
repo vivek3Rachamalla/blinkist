@@ -8,6 +8,7 @@ function SearchBar(){
         <Input
         placeholder='Search by title or author'
         style={{width:"600px"}}
+        onChange={()=> console.log("h1")}
           startAdornment={
             <InputAdornment position="start">
               <SearchOutlinedIcon />

@@ -1,4 +1,3 @@
-import bookDetails from "../../classes/bookClass";
 import Fotter from "../organisms/fotter";
 import NavBar from "../organisms/navbar";
 

@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@mui/material";
 
-class bookDetails {
+class BookDetails {
     id: number;
     title: string;
     author: string;
@@ -21,4 +21,4 @@ class bookDetails {
   
   }
 
-  export default bookDetails
+  export default BookDetails

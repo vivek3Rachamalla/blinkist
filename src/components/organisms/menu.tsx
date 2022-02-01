@@ -9,7 +9,6 @@ import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import { BsBarChart, BsGraphUp, BsChatRightDots} from 'react-icons/bs';
 import { BiGlobeAlt, BiTargetLock } from 'react-icons/bi';
 import { RiPsychotherapyLine, RiLeafLine, RiHospitalLine, RiWallet3Line, RiHeartsLine, RiLightbulbFlashLine, RiBriefcaseLine } from 'react-icons/ri'
-import { GrTarget } from 'react-icons/gr'
 import { GiGreekTemple, GiVikingLonghouse } from 'react-icons/gi'
 import { CgSandClock } from 'react-icons/cg'
 import { AiOutlineBell } from 'react-icons/ai'
@@ -70,8 +69,6 @@ const Menu = (props:{setBooks:(category:string)=>void})=>{
     const [category, setCategory ] = useState(true);
     const [recently, setRecently ] = useState(false);  
     const [popular, setPopular ] = useState(false);
-
-    const xyz = <BsBarChart/>;
 
     const theme = createTheme();
 

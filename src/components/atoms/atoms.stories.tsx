@@ -2,7 +2,8 @@ import React from "react"
 
 import Icons from './icons'
 import Logo from "./logo";
-import SlideButton from "./slideButton";
+import Header from "./myLibraryHeader";
+import { CgSandClock } from 'react-icons/cg'
 
 export default {
     title: "atoms"
@@ -11,4 +12,9 @@ export default {
 
 export const logo = ()=> <Logo />
 
-export const slideButton = ()=> <SlideButton text="Currently reading" type={true}/>
+export const header = () => <Header />
+
+export const icon = () => <Icons  icon={<CgSandClock />} 
+                                  name="sand clock"
+                                  iconId="sand" 
+                                  setBooks={()=>console.log("stories icons component")}/>
