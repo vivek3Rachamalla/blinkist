@@ -1,5 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import BookCard from './bookCard';
+import SearchBar from './searchbar';
 
 
 const bookInfo = {
@@ -15,6 +16,14 @@ const bookInfo = {
 test('book card test', ()=>{
     render(<BookCard  info={bookInfo} readBook={()=>console.log("hellow")}/>)
     const card = screen.getByTestId("bookCard")
-    const image= screen.getByRole("img")
+    const button = screen.getByRole("button")
+    fireEvent.click(screen.getByTestId("bookCardClick"))
+    fireEvent.click(button)
     expect(card).toBeInTheDocument()
+})
+
+test('search bar test', ()=>{
+    render(<SearchBar />)
+    const searchBar = screen.getByPlaceholderText('Search by title or author')
+    expect(searchBar).toBeInTheDocument()
 })

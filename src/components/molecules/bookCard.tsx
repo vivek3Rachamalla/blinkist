@@ -23,7 +23,7 @@ function BookCard(props:{info: bookDetails, readBook:()=>void }){
   return (
     <Grid item xs={6} md={4}>
     <Card data-testid="bookCard" sx={{ maxWidth: 285, button:{color : "#0365F2"}, "&:hover":{ background: "#F1F6F4", button:{background: "#0365F2",color : "#FFFFFF"} }}}>
-      <div onClick={()=>{localStorage.setItem("bookId","/"+props.info.id); window.location.href="bookPage" }}>
+      <div data-testid="bookCardClick" onClick={()=>{localStorage.setItem("bookId","/"+props.info.id); window.location.href="bookPage" }}>
       <CardMedia
         component="img"
         height="240"
