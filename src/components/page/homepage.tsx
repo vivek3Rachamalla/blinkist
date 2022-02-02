@@ -1,14 +1,11 @@
 import bookDetails from "../../classes/bookClass";
 import { useEffect, useState } from "react";
 import HomePageTemplate from "../template/homePageTemplate";
-import { text } from "stream/consumers";
-
 
 
  function HomePage(){
     const [homeBooks,setHomeBooks] = useState<bookDetails[]>([])
     const [books,setBooks] = useState<bookDetails[]>([])
-    console.log("hi");
 
     useEffect( ()=>{
          fetch('http://localhost:3000/books')
@@ -35,9 +32,10 @@ import { text } from "stream/consumers";
     }
 
     const onSearch = (text:string) =>{
-       const temp =books
-        .filter((data)=> data.title.toLowerCase().match(text.toLowerCase()))
-        console.log(temp);
+       const booksByTitle =books.filter((data)=> data.title.toLowerCase().match(text.toLowerCase()))
+       const booksByAuthor =books.filter((data)=> data.author.toLowerCase().match(text.toLowerCase()))
+       const result = booksByTitle.filter((data) => !booksByAuthor.includes(data))
+       setHomeBooks([...result,...booksByAuthor])
     }
     
 return(

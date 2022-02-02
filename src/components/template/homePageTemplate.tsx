@@ -11,11 +11,11 @@ function HomePageTemplate(props:{homeBooks:Array<BookDetails>,
                                 readBook:(id:number)=>void,
                                 onSearch:(text:string)=>void}){
     return(
-        <div>
+        <div data-testid="home-template">
             <NavBar setBooks={props.setBooks}/>
             <Container maxWidth="md">
             <Grid item md={12} style={{paddingTop:"2rem", paddingBottom:"2rem"}}>
-                <img src={banner}  />
+                <img src={banner} />
             </Grid>
             <Grid item md={12}>
                 <SearchBar onSearch={props.onSearch}/>

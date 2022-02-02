@@ -11,7 +11,7 @@ const theme = createTheme({
     },
     palette:{
         secondary:{
-            main:"#22C870"
+            main:"#20c997"
         }
     }
 });

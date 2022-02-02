@@ -1,4 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
+import {shallow} from 'enzyme';
 
 import BookPage from './bookPage';
 import HomePage from './homepage';
@@ -23,8 +24,8 @@ test("test bookcard page", ()=>{
 
 test("test homePage",()=>{
     render(<HomePage />)
-    //const bookCards =await waitForElement(() => screen.queryAllByTestId("book-card"));
-    //expect(bookCards[0]).toBeInTheDocument();
+    const searchbar = screen.getByPlaceholderText('Search by title or author')
+    fireEvent.change(searchbar)
 })
 
 test("test myLibrary", ()=> {

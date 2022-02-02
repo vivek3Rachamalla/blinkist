@@ -8,7 +8,7 @@ function SearchBar(props:{onSearch:(text:string)=> void}){
         <Input
         placeholder='Search by title or author'
         style={{width:"600px"}}
-        onChange={()=> console.log("h1")}
+        onChange={(e)=> props.onSearch(e.target.value)}
           startAdornment={
             <InputAdornment position="start">
               <SearchOutlinedIcon />

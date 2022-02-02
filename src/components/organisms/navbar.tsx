@@ -1,4 +1,4 @@
-import { Avatar,Button,Dialog,DialogTitle,IconButton,Link, Typography } from "@mui/material";
+import { Avatar,Button,Dialog,IconButton,Link, Typography } from "@mui/material";
 import { useState } from "react";
 import Logo from "../atoms/blinkist.png";
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
@@ -78,7 +78,7 @@ function NavBar(props:{setBooks:(category:string)=>void}){
       </ul>
       <form className="d-flex">
       <Avatar sx={{ bgcolor: "#69A6E3" }}>A</Avatar>
-      <IconButton color="primary" component="span" onClick={handleOpen} >
+      <IconButton data-testid="auth-view" color="primary" component="span" onClick={handleOpen} >
           <ExpandMoreIcon/>
       </IconButton>
       <Dialog onClose={handleClose} open={open}>

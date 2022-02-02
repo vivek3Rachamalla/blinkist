@@ -1,9 +1,5 @@
 
-
-import BookCard from "./bookCard";
-import SearchBar from "./searchbar";
 import bookDetails from "../../classes/bookClass";
-import Menu from "../organisms/menu";
 
 export default {
     title: "molecules"

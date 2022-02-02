@@ -43,5 +43,8 @@ test('test nav bar', () =>{
 
     fireEvent.click(popular)
     expect(screen.getByText('There are no popular categories yet')).toBeVisible()
-
+    
+    fireEvent.click(screen.getByTestId('auth-view'))
+    
+    expect(screen.getByText('Log In')).toBeInTheDocument();
 })
