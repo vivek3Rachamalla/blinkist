@@ -1,17 +1,27 @@
-import { Avatar, Backdrop, Container, Grid, IconButton, Link, Typography } from "@mui/material";
-import { Component, useState } from "react";
+import { Avatar,Button,Dialog,DialogTitle,IconButton,Link, Typography } from "@mui/material";
+import { useState } from "react";
 import Logo from "../atoms/blinkist.png";
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SearchIcon from '@mui/icons-material/Search';
 import Menu from './menu'
-import { makeStyles } from "@mui/styles";
-import bookDetails from "../../classes/bookClass";
-import { typography } from "@mui/system";
+import { useAuth0 } from "@auth0/auth0-react";
+
 
 function NavBar(props:{setBooks:(category:string)=>void}){
-    const [expanded,handleExpandClick] = useState(false);
+    const [expanded, handleExpandClick] = useState(false);
 
+    const [open, setOpen] = useState(false);
+
+    const { loginWithRedirect,isAuthenticated, logout } = useAuth0();
+
+    const handleOpen = ()=>{
+      setOpen(true)
+    }
+
+    const handleClose = ()=>{
+      setOpen(false)
+    }
     return(
       /*<Container maxWidth="md" >
         <Grid container spacing={2} style={{ paddingTop:"3rem" }}>
@@ -31,7 +41,7 @@ function NavBar(props:{setBooks:(category:string)=>void}){
           <Grid xs={3} md={2}>
               <Typography variant="body1" style={{paddingLeft:"1rem",paddingRight:"1rem"}}>
                   <Link underline="none" color="inherit" href="mylibrary">My Library</Link>
-              </Typography>
+              </TypographComponentComponenty>
           </Grid>
         </Grid>
         <Backdrop
@@ -45,9 +55,7 @@ function NavBar(props:{setBooks:(category:string)=>void}){
 <nav className="navbar navbar-expand-sm bg-light navbar-dark" style={{ paddingLeft: "30rem", paddingRight: "25rem" }}>
 <div className="container-fluid">
     <Typography variant="h5" style={{paddingLeft:"1rem",paddingRight:"1rem"}}>
-    <a>
       <img className="navitem rounded-pill" src={Logo} alt="logo"  width="26px" height="26px" ></img>Blinkist
-    </a>
     </Typography>
       <ul className="navbar-nav me-auto">
         <li className="nav-item">
@@ -56,20 +64,27 @@ function NavBar(props:{setBooks:(category:string)=>void}){
         </Typography>
         </li>
         <li className="nav-item">
-        <Typography variant="body1" style={{paddingLeft:"1rem",paddingRight:"1rem"}}>  
-           <div  onClick={()=>handleExpandClick(!expanded)} data-bs-toggle="collapse" data-bs-target="#demo">
+        <Typography variant="body1" style={{paddingLeft:"1rem",paddingRight:"1rem"}}
+                                    onClick={()=>handleExpandClick(!expanded)}
+                                    data-bs-toggle="collapse" data-bs-target="#demo">  
                  Explore{expanded?<ExpandLessIcon/>:<ExpandMoreIcon/>}
-           </div>
-      </Typography>
+        </Typography>
         </li>
-        <li className="nav-item">
+        {isAuthenticated &&  <li className="nav-item">
              <Typography variant="body1" style={{paddingLeft:"1rem",paddingRight:"1rem"}}>
                   <Link underline="none" color="inherit" href="mylibrary">My Library</Link>
               </Typography>
-        </li>
+        </li>}
       </ul>
       <form className="d-flex">
       <Avatar sx={{ bgcolor: "#69A6E3" }}>A</Avatar>
+      <IconButton color="primary" component="span" onClick={handleOpen} >
+          <ExpandMoreIcon/>
+      </IconButton>
+      <Dialog onClose={handleClose} open={open}>
+      <Button disabled={isAuthenticated} onClick={() => loginWithRedirect()}>Log In</Button>
+      <Button disabled={!isAuthenticated} onClick={() => logout({ returnTo: window.location.origin })}>Log Out</Button>
+      </Dialog>
       </form>
   </div>
 </nav>

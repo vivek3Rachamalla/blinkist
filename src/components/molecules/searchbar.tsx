@@ -2,7 +2,7 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined'
 import Input from '@mui/material/Input';
 import InputAdornment from '@mui/material/InputAdornment';
 
-function SearchBar(){
+function SearchBar(props:{onSearch:(text:string)=> void}){
 
     return(
         <Input
@@ -19,4 +19,4 @@ function SearchBar(){
 
 }
 
-export default SearchBar
+export default SearchBar;

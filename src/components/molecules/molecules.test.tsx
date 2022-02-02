@@ -15,15 +15,15 @@ const bookInfo = {
 
 test('book card test', ()=>{
     render(<BookCard  info={bookInfo} readBook={()=>console.log("hellow")}/>)
-    const card = screen.getByTestId("bookCard")
+    const card = screen.getByTestId("book-card")
     const button = screen.getByRole("button")
-    fireEvent.click(screen.getByTestId("bookCardClick"))
+    fireEvent.click(screen.getByTestId("book-card-click"))
     fireEvent.click(button)
     expect(card).toBeInTheDocument()
 })
 
 test('search bar test', ()=>{
-    render(<SearchBar />)
+    render(<SearchBar onSearch={(text:string)=>console.log("search")}/>)
     const searchBar = screen.getByPlaceholderText('Search by title or author')
     expect(searchBar).toBeInTheDocument()
 })

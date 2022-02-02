@@ -33,7 +33,6 @@ function MenuItems(props:{category:boolean,recently:boolean,popular:boolean,setB
         <h5>There are no popular categories yet</h5>
     );
     return(
-        <div style={{ padding: "1rem" }} >
              <Grid container spacing={0}>
                <Grid item md={4}>
                <Icons icon={<AiOutlineBell/>} name="Entreprenurship" setBooks={()=>props.setBooks("Entrepreneurship")}  iconId="Entreprenurship"/>
@@ -60,7 +59,6 @@ function MenuItems(props:{category:boolean,recently:boolean,popular:boolean,setB
                <Icons icon={<SchoolOutlinedIcon fontSize="small"/>} name="Education" setBooks={()=>props.setBooks("Entreprenurship")} iconId="Education"/>
                </Grid>
            </Grid>
-        </div>    
     );
 }
 
@@ -75,7 +73,7 @@ const Menu = (props:{setBooks:(category:string)=>void})=>{
     const classes = useStyles(theme);
 
     return(
-       <div style={{ background: "#F1F6F4" }} id="demo" className="collapse">
+       <div data-testid="menu-items" style={{ background: "#F1F6F4" }} id="demo" className="collapse">
            <Container maxWidth="md" >
            <Grid container spacing={0}>
                <Grid item md={4}>
@@ -94,7 +92,9 @@ const Menu = (props:{setBooks:(category:string)=>void})=>{
                    </Typography>
                </Grid>
            </Grid>
+           <div style={{ padding: "1rem" }} >
            <MenuItems category={category} recently={recently} popular={popular} setBooks={props.setBooks}/>
+           </div>
            </Container>    
        </div>
     );
