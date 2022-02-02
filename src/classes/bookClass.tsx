@@ -1,4 +1,3 @@
-import { ThemeProvider } from "@mui/material";
 
 class BookDetails {
     id: number;
@@ -10,7 +9,7 @@ class BookDetails {
     status: string;
   
     constructor(id: number, title: string, author: string,time: string, category: string, image: string,status: string){
-      this.id =id
+      this.id =id;
       this.image = image;
       this.title = title;
       this.author = author;

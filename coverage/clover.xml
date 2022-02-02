@@ -1,111 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1643822805882" clover="3.2.0">
-  <project timestamp="1643822805882" name="All files">
-    <metrics statements="94" coveredstatements="62" conditionals="6" coveredconditionals="5" methods="59" coveredmethods="25" elements="159" coveredelements="92" complexity="0" loc="94" ncloc="94" packages="6" files="12" classes="12"/>
-    <package name="src">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="App.tsx" path="/home/vivekr/react/blinkist/src/App.tsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="10" count="2" type="stmt"/>
-      </file>
-      <file name="theme.tsx" path="/home/vivekr/react/blinkist/src/theme.tsx">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.classes">
+<coverage generated="1643823804225" clover="3.2.0">
+  <project timestamp="1643823804225" name="All files">
+    <metrics statements="57" coveredstatements="28" conditionals="0" coveredconditionals="0" methods="32" coveredmethods="7" elements="89" coveredelements="35" complexity="0" loc="57" ncloc="57" packages="2" files="4" classes="4"/>
+    <package name="classes">
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="bookClass.tsx" path="/home/vivekr/react/blinkist/src/classes/bookClass.tsx">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="12" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
         <line num="14" count="2" type="stmt"/>
         <line num="15" count="2" type="stmt"/>
         <line num="16" count="2" type="stmt"/>
         <line num="17" count="2" type="stmt"/>
         <line num="18" count="2" type="stmt"/>
-        <line num="19" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="src.components.molecules">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="searchbar.tsx" path="/home/vivekr/react/blinkist/src/components/molecules/searchbar.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.components.organisms">
-      <metrics statements="19" coveredstatements="16" conditionals="4" coveredconditionals="3" methods="9" coveredmethods="6"/>
-      <file name="fotter.tsx" path="/home/vivekr/react/blinkist/src/components/organisms/fotter.tsx">
-        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="20" count="10" type="stmt"/>
-        <line num="21" count="10" type="stmt"/>
-        <line num="22" count="10" type="stmt"/>
-        <line num="23" count="10" type="stmt"/>
-        <line num="24" count="10" type="stmt"/>
-        <line num="53" count="30" type="stmt"/>
-        <line num="61" count="130" type="stmt"/>
-      </file>
-      <file name="navbar.tsx" path="/home/vivekr/react/blinkist/src/components/organisms/navbar.tsx">
-        <metrics statements="11" coveredstatements="8" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="3"/>
-        <line num="12" count="16" type="stmt"/>
-        <line num="14" count="12" type="stmt"/>
-        <line num="16" count="12" type="stmt"/>
-        <line num="18" count="12" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="22" count="12" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="25" count="12" type="stmt"/>
-        <line num="68" count="1" type="stmt"/>
-        <line num="85" count="0" type="stmt"/>
-        <line num="86" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.components.page">
+    <package name="components.page">
       <metrics statements="50" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="31" coveredmethods="6"/>
       <file name="bookPage.tsx" path="/home/vivekr/react/blinkist/src/components/page/bookPage.tsx">
         <metrics statements="16" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="2"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="48" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
       </file>
       <file name="homepage.tsx" path="/home/vivekr/react/blinkist/src/components/page/homepage.tsx">
         <metrics statements="19" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="2"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="20" count="2" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
-        <line num="34" count="2" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
-        <line num="41" count="2" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
       </file>
       <file name="mylibrary.tsx" path="/home/vivekr/react/blinkist/src/components/page/mylibrary.tsx">
         <metrics statements="15" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="2"/>
@@ -124,30 +75,6 @@
         <line num="32" count="0" type="stmt"/>
         <line num="35" count="2" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.components.template">
-      <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="15" coveredmethods="9"/>
-      <file name="bookPageTemplate.tsx" path="/home/vivekr/react/blinkist/src/components/template/bookPageTemplate.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-      </file>
-      <file name="homePageTemplate.tsx" path="/home/vivekr/react/blinkist/src/components/template/homePageTemplate.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="24" count="6" type="stmt"/>
-      </file>
-      <file name="myLibraryTemplate.tsx" path="/home/vivekr/react/blinkist/src/components/template/myLibraryTemplate.tsx">
-        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="10" coveredmethods="5"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="41" count="12" type="stmt"/>
-        <line num="46" count="12" type="stmt"/>
-        <line num="64" count="8" type="stmt"/>
-        <line num="66" count="8" type="stmt"/>
-        <line num="84" count="8" type="stmt"/>
       </file>
     </package>
   </project>
