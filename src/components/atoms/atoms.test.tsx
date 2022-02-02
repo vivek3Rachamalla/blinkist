@@ -1,8 +1,9 @@
-import { render, screen} from '@testing-library/react';
+import { fireEvent, render, screen} from '@testing-library/react';
 
 import Header from './myLibraryHeader'
 import Icons from './icons';
 import { CgSandClock } from 'react-icons/cg';
+import Logo from './logo';
 
 test('MyLibrary header', () => {
     render(<Header />);
@@ -13,8 +14,15 @@ test('MyLibrary header', () => {
 test('icon test of menu', () => {
     render(<Icons  icon={<CgSandClock />} 
             name="sand clock"
-            iconId="sand" 
             setBooks={()=>console.log("stories icons component")}/>);
     
-    const IconTextButton = document.getElementsByTagName('a');
+    const IconTextButton = screen.getByTestId('menu-icon');
+    fireEvent.click(IconTextButton);
+    expect(IconTextButton).toBeInTheDocument();
+})
+
+test('test logo', ()=>{
+    render(<Logo />)
+
+    expect(screen.getByRole('img')).toBeInTheDocument();
 })

@@ -35,28 +35,28 @@ function MenuItems(props:{category:boolean,recently:boolean,popular:boolean,setB
     return(
              <Grid container spacing={0}>
                <Grid item md={4}>
-               <Icons icon={<AiOutlineBell/>} name="Entreprenurship" setBooks={()=>props.setBooks("Entrepreneurship")}  iconId="Entreprenurship"/>
-               <Icons icon={<ScienceOutlinedIcon fontSize="small"/>} setBooks={()=>props.setBooks("Entreprenurship")} name="Science" iconId="Science"/>
-               <Icons icon={<BiGlobeAlt/>} name="Economics"  setBooks={()=>props.setBooks("Entreprenurship")} iconId="Economics"/>
-               <Icons icon={<RiBriefcaseLine/>} name="Corporate &amp; Culture" setBooks={()=>props.setBooks("Entreprenurship")} iconId="Corporate-Culture"/>
-               <Icons icon={<RiPsychotherapyLine/>} name="Psychology" setBooks={()=>props.setBooks("Entreprenurship")} iconId="Psychology"/>
-               <Icons icon={<RiLeafLine/>} name="Nature &amp; Environment" setBooks={()=>props.setBooks("Entreprenurship")} iconId="Nature-Environment"/>
+               <Icons icon={<AiOutlineBell/>} name="Entreprenurship" setBooks={()=>props.setBooks("Entrepreneurship")}  />
+               <Icons icon={<ScienceOutlinedIcon fontSize="small"/>} setBooks={()=>props.setBooks("Entreprenurship")} name="Science" />
+               <Icons icon={<BiGlobeAlt/>} name="Economics"  setBooks={()=>props.setBooks("Entreprenurship")} />
+               <Icons icon={<RiBriefcaseLine/>} name="Corporate &amp; Culture" setBooks={()=>props.setBooks("Entreprenurship")} />
+               <Icons icon={<RiPsychotherapyLine/>} name="Psychology" setBooks={()=>props.setBooks("Entreprenurship")} />
+               <Icons icon={<RiLeafLine/>} name="Nature &amp; Environment" setBooks={()=>props.setBooks("Entreprenurship")} />
                </Grid>
                <Grid item md={4}>
-               <Icons icon={<GiVikingLonghouse/>} name="History" setBooks={()=>props.setBooks("Entreprenurship")} iconId="History"/>    
-               <Icons icon={<GiGreekTemple/>} name="Politics" setBooks={()=>props.setBooks("Politics")} iconId="Politics"/>    
-               <Icons icon={<RiHospitalLine/>} name="Health &amp; Nutrition" setBooks={()=>props.setBooks("Entreprenurship")} iconId="Health-Nutrin"/>
-               <Icons icon={<RiLightbulbFlashLine/>} name="Motivation &amp; Inspiration" setBooks={()=>props.setBooks("Entreprenurship")} iconId="Motivation-Inspiration"/>
-               <Icons icon={<CgSandClock/>} name="Productivity" setBooks={()=>props.setBooks("Entreprenurship")} iconId="Productivity"/>
-               <Icons icon={<BiTargetLock/>} name="Career &amp; Success" setBooks={()=>props.setBooks("Entreprenurship")} iconId="Career-Success"/>
+               <Icons icon={<GiVikingLonghouse/>} name="History" setBooks={()=>props.setBooks("Entreprenurship")} />    
+               <Icons icon={<GiGreekTemple/>} name="Politics" setBooks={()=>props.setBooks("Politics")} />   
+               <Icons icon={<RiHospitalLine/>} name="Health &amp; Nutrition" setBooks={()=>props.setBooks("Entreprenurship")}/>
+               <Icons icon={<RiLightbulbFlashLine/>} name="Motivation &amp; Inspiration" setBooks={()=>props.setBooks("Entreprenurship")}/>
+               <Icons icon={<CgSandClock/>} name="Productivity" setBooks={()=>props.setBooks("Entreprenurship")}/>
+               <Icons icon={<BiTargetLock/>} name="Career &amp; Success" setBooks={()=>props.setBooks("Entreprenurship")} />
                </Grid>
                <Grid item md={4}>
-               <Icons icon={<BsGraphUp/>} name="Marketing &amp; Sales" setBooks={()=>props.setBooks("Entreprenurship")} iconId="Marketing-sales"/>
-               <Icons icon={<BsBarChart/>} name="Personal Development" setBooks={()=>props.setBooks("Entreprenurship")} iconId="Personal-Development"/>
-               <Icons icon={<BsChatRightDots/>} name="Communication Skills" setBooks={()=>props.setBooks("Entreprenurship")} iconId="Communication-Skills"/>
-               <Icons icon={<RiWallet3Line/>} name="Money &amp; Investiment" setBooks={()=>props.setBooks("Entreprenurship")} iconId="Money-Investiment"/>
-               <Icons icon={<RiHeartsLine/>} name="Sex &amp; Relationship" setBooks={()=>props.setBooks("Entreprenurship")} iconId="Sex-Relationship"/>
-               <Icons icon={<SchoolOutlinedIcon fontSize="small"/>} name="Education" setBooks={()=>props.setBooks("Entreprenurship")} iconId="Education"/>
+               <Icons icon={<BsGraphUp/>} name="Marketing &amp; Sales" setBooks={()=>props.setBooks("Entreprenurship")} />
+               <Icons icon={<BsBarChart/>} name="Personal Development" setBooks={()=>props.setBooks("Entreprenurship")} />
+               <Icons icon={<BsChatRightDots/>} name="Communication Skills" setBooks={()=>props.setBooks("Entreprenurship")} />
+               <Icons icon={<RiWallet3Line/>} name="Money &amp; Investiment" setBooks={()=>props.setBooks("Entreprenurship")} />
+               <Icons icon={<RiHeartsLine/>} name="Sex &amp; Relationship" setBooks={()=>props.setBooks("Entreprenurship")} />
+               <Icons icon={<SchoolOutlinedIcon fontSize="small"/>} name="Education" setBooks={()=>props.setBooks("Entreprenurship")} />
                </Grid>
            </Grid>
     );

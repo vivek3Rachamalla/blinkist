@@ -16,5 +16,4 @@ export const header = () => <Header />
 
 export const icon = () => <Icons  icon={<CgSandClock />} 
                                   name="sand clock"
-                                  iconId="sand" 
                                   setBooks={()=>console.log("stories icons component")}/>

@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">36.36% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>4/11</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">16.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/6</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">40% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>4/10</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -82,61 +82,43 @@
 <a name='L17'></a><a href='#L17'>17</a>
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L20'></a><a href='#L20'>20</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">127x</span>
 <span class="cline-any cline-yes">127x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">127x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">127x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">19x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { makeStyles } from "@mui/styles";
 &nbsp;
-function Icons(props:{icon:JSX.Element, name:string, iconId:string,setBooks:()=&gt;void}){
-  let iconId=props.iconId;
-  const onMouseEnter=<span class="fstat-no" title="function not covered" >(i</span>d:string)=&gt;{
-    var qid=<span class="cstat-no" title="statement not covered" >"#"+id+" a";</span>
-<span class="cstat-no" title="statement not covered" >    document.querySelector(qid)?.setAttribute("style","color: #0365F2")</span>
+&nbsp;
+const useStyles=makeStyles({
+  icon_style:{
+    "color": "#6D787E",
+    "&amp;:hover":{ color: "#0365F2"},
   }
+})
 &nbsp;
-  const onMouseLeave=<span class="fstat-no" title="function not covered" >(i</span>d:string)=&gt;{
-    var qid=<span class="cstat-no" title="statement not covered" >"#"+id+" a";</span>
-<span class="cstat-no" title="statement not covered" >    document.querySelector(qid)?.setAttribute("style","color: #6D787E")</span>
-  }
-&nbsp;
+function Icons(props:{icon:JSX.Element, name:string,setBooks:()=&gt;void}){
+  const classes = useStyles();
     return(
-    &lt;div id={props.iconId} style={{ paddingBottom: "1rem" }} onMouseEnter={<span class="fstat-no" title="function not covered" >()</span>=&gt;{ <span class="cstat-no" title="statement not covered" >onMouseEnter(iconId) </span>}}
-    onMouseLeave={<span class="fstat-no" title="function not covered" >()</span>=&gt;{ <span class="cstat-no" title="statement not covered" >onMouseLeave(iconId) </span>}} onClick={<span class="fstat-no" title="function not covered" >()</span>=&gt;<span class="cstat-no" title="statement not covered" >props.setBooks()}</span> data-bs-toggle="collapse" data-bs-target="#demo"&gt;  
-    &lt;a
-      style={{ color: "#6D787E" }}&gt;
+    &lt;div data-testid="menu-icon" className={classes.icon_style} style={{ paddingBottom: "1rem" }} onClick={()=&gt;props.setBooks()} data-bs-toggle="collapse" data-bs-target="#demo"&gt;  
       {props.icon} {props.name}
-    &lt;/a&gt;
     &lt;/div&gt;
     );
-}
+    }
 &nbsp;
 export default Icons;</pre></td></tr></table></pre>
 
@@ -145,7 +127,7 @@ export default Icons;</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Wed Feb 02 2022 13:03:25 GMT+0530 (India Standard Time)
+                at Wed Feb 02 2022 14:45:45 GMT+0530 (India Standard Time)
             </div>
         <script src="../../../prettify.js"></script>
         <script>
