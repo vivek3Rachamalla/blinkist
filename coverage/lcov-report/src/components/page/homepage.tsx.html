@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/24</span>
+                <span class='fraction'>0/24</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">15.38% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/13</span>
+                <span class='fraction'>0/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">42.1% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/19</span>
+                <span class='fraction'>0/19</span>
             </div>
         
             
@@ -117,41 +117,41 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -164,21 +164,21 @@ import { useEffect, useState } from "react";
 import HomePageTemplate from "../template/homePageTemplate";
 &nbsp;
 &nbsp;
- function HomePage(){
-    const [homeBooks,setHomeBooks] = useState&lt;bookDetails[]&gt;([])
-    const [books,setBooks] = useState&lt;bookDetails[]&gt;([])
+ function <span class="fstat-no" title="function not covered" >HomePage(</span>){
+    const [homeBooks,setHomeBooks] = <span class="cstat-no" title="statement not covered" >useState&lt;bookDetails[]&gt;([])</span>
+    const [books,setBooks] = <span class="cstat-no" title="statement not covered" >useState&lt;bookDetails[]&gt;([])</span>
 &nbsp;
-    useEffect( ()=&gt;{
-         fetch('http://localhost:3000/books')
+<span class="cstat-no" title="statement not covered" >    useEffect( <span class="fstat-no" title="function not covered" >()</span>=&gt;{</span>
+<span class="cstat-no" title="statement not covered" >         fetch('http://localhost:3000/books')</span>
          .then(<span class="fstat-no" title="function not covered" >re</span>sponse =&gt; <span class="cstat-no" title="statement not covered" >response.json())</span>
          .then(<span class="fstat-no" title="function not covered" >da</span>ta=&gt;{<span class="cstat-no" title="statement not covered" >setBooks(data); <span class="cstat-no" title="statement not covered" ></span>setHomeBooks(data)}</span>);
     },[])
     
-    const setCategory=<span class="fstat-no" title="function not covered" >(c</span>ategory:string)=&gt; {
+    const setCategory=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(c</span>ategory:string)=&gt; {</span>
 <span class="cstat-no" title="statement not covered" >        setHomeBooks(books.filter(<span class="fstat-no" title="function not covered" >(d</span>ata)=&gt; <span class="cstat-no" title="statement not covered" >data.category === category)</span>)</span>
     }
 &nbsp;
-    const readBook=<span class="fstat-no" title="function not covered" >as</span>ync(id:number)=&gt;{
+    const readBook=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >as</span>ync(id:number)=&gt;{</span>
 <span class="cstat-no" title="statement not covered" >        books[id-1].status="started"</span>
 <span class="cstat-no" title="statement not covered" >        await fetch('http://localhost:3000/books/'+id,{</span>
             method:"PUT",
@@ -192,14 +192,14 @@ import HomePageTemplate from "../template/homePageTemplate";
 &nbsp;
     }
 &nbsp;
-    const onSearch = <span class="fstat-no" title="function not covered" >(t</span>ext:string) =&gt;{
+    const onSearch = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(t</span>ext:string) =&gt;{</span>
        const booksByTitle =<span class="cstat-no" title="statement not covered" >books.filter(<span class="fstat-no" title="function not covered" >(d</span>ata)=&gt; <span class="cstat-no" title="statement not covered" >data.title.toLowerCase().match(text.toLowerCase()))</span></span>
        const booksByAuthor =<span class="cstat-no" title="statement not covered" >books.filter(<span class="fstat-no" title="function not covered" >(d</span>ata)=&gt; <span class="cstat-no" title="statement not covered" >data.author.toLowerCase().match(text.toLowerCase()))</span></span>
        const result = <span class="cstat-no" title="statement not covered" >booksByTitle.filter(<span class="fstat-no" title="function not covered" >(d</span>ata) =&gt; <span class="cstat-no" title="statement not covered" >!booksByAuthor.includes(data))</span></span>
 <span class="cstat-no" title="statement not covered" >       setHomeBooks([...result,...booksByAuthor])</span>
     }
     
-return(
+<span class="cstat-no" title="statement not covered" >return(</span>
     &lt;HomePageTemplate homeBooks={homeBooks} setBooks={setCategory} readBook={readBook} onSearch={onSearch}/&gt;
 );
 }
@@ -214,7 +214,7 @@ export default HomePage
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Wed Feb 02 2022 22:56:45 GMT+0530 (India Standard Time)
+                at Thu Feb 03 2022 09:13:48 GMT+0530 (India Standard Time)
             </div>
         <script src="../../../prettify.js"></script>
         <script>

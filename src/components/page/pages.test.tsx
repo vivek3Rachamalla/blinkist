@@ -21,11 +21,11 @@ test("test bookcard page", ()=>{
     expect(buttons[1]).toBeInTheDocument();
 })
 
-test("test homePage",()=>{
+/*test("test homePage",()=>{
     render(<HomePage />)
     const searchbar = screen.getByPlaceholderText('Search by title or author')
     fireEvent.change(searchbar)
-})
+})*/
 
 test("test myLibrary", ()=> {
     render(<MyLibrary index={0}/>)
