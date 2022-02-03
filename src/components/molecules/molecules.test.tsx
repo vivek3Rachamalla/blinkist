@@ -68,7 +68,7 @@ test('book card test2', ()=>{
 
 test('search bar test', ()=>{
     render(<SearchBar onSearch={(text:string)=>console.log("search")}/>)
-    const searchBar = screen.getByPlaceholderText('Search by title or author')
+    const searchBar = screen.getByPlaceholderText('Search by title or author',)
     fireEvent.change(searchBar,{target: { value: "search" }})
     expect(searchBar).toBeInTheDocument()
 })

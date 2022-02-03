@@ -1,27 +1,31 @@
-import { Avatar,Button,Dialog,IconButton,Link, Typography } from "@mui/material";
+import { Avatar,Button,Dialog,IconButton,Link, Menu, MenuItem, Typography } from "@mui/material";
 import { useState } from "react";
 import Logo from "../atoms/blinkist.png";
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SearchIcon from '@mui/icons-material/Search';
-import Menu from './menu'
+import MenuItems from './menu'
 import { useAuth0 } from "@auth0/auth0-react";
+import React from "react";
 
 
 function NavBar(props:{setBooks:(category:string)=>void}){
     const [expanded, handleExpandClick] = useState(false);
 
-    const [open, setOpen] = useState(false);
+    const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+
+    const open = Boolean(anchorEl);
+
+    const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+      setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+      setAnchorEl(null);
+    };
 
     const { loginWithRedirect,isAuthenticated, logout } = useAuth0();
 
-    const handleOpen = ()=>{
-      setOpen(true)
-    }
-
-    const handleClose = ()=>{
-      setOpen(false)
-    }
     return(
       /*<Container maxWidth="md" >
         <Grid container spacing={2} style={{ paddingTop:"3rem" }}>
@@ -76,19 +80,38 @@ function NavBar(props:{setBooks:(category:string)=>void}){
               </Typography>
         </li>}
       </ul>
-      <form className="d-flex">
+      <div className="d-flex">
       <Avatar sx={{ bgcolor: "#69A6E3" }}>A</Avatar>
-      <IconButton data-testid="auth-view" color="primary" component="span" onClick={handleOpen} >
+      <IconButton  
+         data-testid='account-dropbox'
+         id="basic-button"
+         aria-controls={open ? 'basic-menu' : undefined}
+         aria-haspopup="true"
+         aria-expanded={open ? 'true' : undefined}
+         component="span" 
+         onClick={handleClick} >
           <ExpandMoreIcon/>
       </IconButton>
-      <Dialog onClose={handleClose} open={open}>
-      <Button disabled={isAuthenticated} onClick={() => loginWithRedirect()}>Log In</Button>
-      <Button disabled={!isAuthenticated} onClick={() => logout({ returnTo: window.location.origin })}>Log Out</Button>
-      </Dialog>
-      </form>
+      <Menu
+        id="basic-menu"
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        MenuListProps={{
+          'aria-labelledby': 'basic-button',
+        }}
+      >
+        <MenuItem onClick={handleClose}>
+        <Button disabled={isAuthenticated} onClick={() => loginWithRedirect()}>Log In</Button>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+        <Button disabled={!isAuthenticated} onClick={() => logout({ returnTo: window.location.origin })}>Log Out</Button>
+        </MenuItem>
+      </Menu>
+      </div>
   </div>
 </nav>
-<Menu setBooks={props.setBooks}/>
+<MenuItems setBooks={props.setBooks}/>
 </div>
 
     );

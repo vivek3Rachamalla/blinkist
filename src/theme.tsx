@@ -6,8 +6,7 @@ const defaultTheme = createTheme();
 const theme = createTheme({
 
     typography:{
-        fontFamily: "Raleway",
-        fontSize: 28
+        fontFamily: "Raleway"
     },
     palette:{
         secondary:{

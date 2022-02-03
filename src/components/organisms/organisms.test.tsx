@@ -43,8 +43,14 @@ test('test nav bar', () =>{
 
     fireEvent.click(popular)
     expect(screen.getByText('There are no popular categories yet')).toBeVisible()
+
+    const dropdown = screen.getByTestId('account-dropbox')
+    expect(dropdown).toBeInTheDocument();
+    fireEvent.click(dropdown)
+    //fireEvent.click(screen.getByTestId('auth-view'))
+    const logInButton =screen.getByText('Log In')
+    const logOutButton =screen.getByText('Log Out')
+    expect(logInButton).toBeInTheDocument();
+    expect(logOutButton).toBeInTheDocument();
     
-    fireEvent.click(screen.getByTestId('auth-view'))
-    
-    expect(screen.getByText('Log In')).toBeInTheDocument();
 })

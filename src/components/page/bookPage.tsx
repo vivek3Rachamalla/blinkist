@@ -35,18 +35,13 @@ function BookPage(){
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(book)
-        })
-         .then(response => response.json())
-         .then(res=> console.log(res));
-
+        }).then(response => response.json()).then(res=> console.log(res));
          window.location.href="finished";
 
     }
 
     return(
-        <ThemeProvider theme={responsiveTheme}>
         <BookPageTemplate  book={book} onClick={onClick} setBooks={navSetBooks} />
-        </ThemeProvider>
     );
 }
 

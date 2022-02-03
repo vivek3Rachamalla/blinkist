@@ -12,11 +12,14 @@ const onSearch = (text:string) => console.log('onsearch')
 
 test('test home page template', ()=>{
     render(<HomePageTemplate homeBooks={homeBooks} 
-                             setBooks={setBooks}
-                             readBook={readBook} 
-                             onSearch={onSearch} />)
+                             setHomeBooks={(books:Array<BookDetails>)=> console.log('home books')}
+                             books={homeBooks} 
+                             setBooks={(books:Array<BookDetails>)=> console.log('books')} />)
 
     expect(screen.getByTestId('home-template')).toBeInTheDocument();
+    fireEvent.click(screen.queryAllByTestId('menu-icon')[0])
+    fireEvent.change(screen.getByPlaceholderText('Search by title or author'),{target: { value: "search" }})
+  
 });
 
 test('test my library template reading', ()=>{

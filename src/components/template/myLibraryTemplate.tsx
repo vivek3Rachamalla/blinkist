@@ -1,8 +1,6 @@
 import { Box, Container, Grid, Tab, Tabs, Typography } from "@mui/material";
-import { ThemeProvider } from "@mui/styles";
 import { useState } from "react";
 import BookDetails from "../../classes/bookClass";
-import responsiveTheme from "../../theme";
 import Header from "../atoms/myLibraryHeader";
 import BookCard from "../molecules/bookCard";
 import Fotter from "../organisms/fotter";
@@ -25,7 +23,6 @@ function MyLibraryTemplate(props:{books:Array<BookDetails>,
                 </Grid>
             </Grid>
                 <Box sx={{ }}>
-                  <ThemeProvider theme={responsiveTheme}>
                   <Tabs value={value}
                         onChange={handleChange}
                         textColor="secondary"
@@ -34,7 +31,6 @@ function MyLibraryTemplate(props:{books:Array<BookDetails>,
                   <Tab label="Currently Reading"  {...a11yProps(0)} />
                   <Tab label="Finished" {...a11yProps(1)} />
                   </Tabs>
-                  </ThemeProvider>
                   </Box>
                   <TabPanel value={value} index={0}>
                   <Grid container item xs={12} md={12} spacing={3}>
