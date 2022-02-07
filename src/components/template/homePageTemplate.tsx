@@ -4,7 +4,7 @@ import BookCard from "../molecules/bookCard";
 import SearchBar from "../molecules/searchbar";
 import Fotter from "../organisms/fotter";
 import NavBar from "../organisms/navbar";
-import banner from "./banner.png"
+import banner from "../assert/images/banner.png"
 
 function HomePageTemplate(props:{homeBooks:Array<BookDetails>,
                                 setHomeBooks:(books:Array<BookDetails>)=> void,
@@ -35,8 +35,8 @@ function HomePageTemplate(props:{homeBooks:Array<BookDetails>,
         <div data-testid="home-template">
             <NavBar setBooks={setCategory}/>
             <Container maxWidth="md">
-            <Grid item md={12} style={{paddingTop:"2rem", paddingBottom:"2rem"}}>
-                <img src={banner} />
+            <Grid item xs={12} md={12} style={{paddingTop:"2rem", paddingBottom:"2rem"}}>
+                <img src={banner}  style={{width: "100%",height: "auto"}}/>
             </Grid>
             <Grid item md={12}>
                 <SearchBar onSearch={onSearch}/>

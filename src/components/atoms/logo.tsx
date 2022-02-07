@@ -1,4 +1,4 @@
-import logo from './logo.png'
+import logo from '../assert/images/logo.png'
 
 function Logo(){
     return(

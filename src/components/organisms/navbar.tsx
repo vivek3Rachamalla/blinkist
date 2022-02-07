@@ -1,15 +1,30 @@
-import { Avatar,Button,Dialog,IconButton,Link, Menu, MenuItem, Typography } from "@mui/material";
+import { Avatar,Button,Container,IconButton,Link, Menu, MenuItem, Theme, Typography } from "@mui/material";
 import { useState } from "react";
-import Logo from "../atoms/blinkist.png";
+import Logo from "../assert/images/blinkist.png";
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SearchIcon from '@mui/icons-material/Search';
 import MenuItems from './menu'
 import { useAuth0 } from "@auth0/auth0-react";
 import React from "react";
+import { makeStyles } from "@mui/styles";
+import responsiveTheme from "../../theme";
 
+
+const useStyles = makeStyles((theme:Theme)=>({
+  navItem_style:{
+    "&:hover":{
+    borderBottom: "3px solid #2CE080",
+    },
+    paddingLeft:"1rem",
+    paddingRight:"1rem"
+  }
+}))
 
 function NavBar(props:{setBooks:(category:string)=>void}){
+     
+    const classes = useStyles(responsiveTheme);
+
     const [expanded, handleExpandClick] = useState(false);
 
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -55,8 +70,9 @@ function NavBar(props:{setBooks:(category:string)=>void}){
         <Menu setBooks={props.setBooks}/>
       </Backdrop>
       </Container>*/
-<div>       
-<nav className="navbar navbar-expand-sm bg-light navbar-dark" style={{ paddingLeft: "30rem", paddingRight: "25rem" }}>
+<div>
+<Container maxWidth="lg">       
+<nav className="navbar navbar-expand-sm bg-light navbar-dark" >
 <div className="container-fluid">
     <Typography variant="h5" style={{paddingLeft:"1rem",paddingRight:"1rem"}}>
       <img className="navitem rounded-pill" src={Logo} alt="logo"  width="26px" height="26px" ></img>Blinkist
@@ -68,16 +84,18 @@ function NavBar(props:{setBooks:(category:string)=>void}){
         </Typography>
         </li>
         <li className="nav-item">
-        <Typography variant="body1" style={{paddingLeft:"1rem",paddingRight:"1rem"}}
+        <Typography variant="body1" className={classes.navItem_style}
                                     onClick={()=>handleExpandClick(!expanded)}
                                     data-bs-toggle="collapse" data-bs-target="#demo">  
-                 Explore{expanded?<ExpandLessIcon/>:<ExpandMoreIcon/>}
+                 Explore {expanded?<ExpandLessIcon/>:<ExpandMoreIcon/>}
         </Typography>
         </li>
         {isAuthenticated &&  <li className="nav-item">
-             <Typography variant="body1" style={{paddingLeft:"1rem",paddingRight:"1rem"}}>
-                  <Link underline="none" color="inherit" href="mylibrary">My Library</Link>
+             <Link underline="none" color="inherit" href="mylibrary">
+             <Typography variant="body1"  className={classes.navItem_style}>
+                  My Library
               </Typography>
+              </Link>
         </li>}
       </ul>
       <div className="d-flex">
@@ -105,12 +123,13 @@ function NavBar(props:{setBooks:(category:string)=>void}){
         <Button disabled={isAuthenticated} onClick={() => loginWithRedirect()}>Log In</Button>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-        <Button disabled={!isAuthenticated} onClick={() => logout({ returnTo: window.location.origin })}>Log Out</Button>
+        <Button disabled={!isAuthenticated} sx={{color:"red"}} onClick={() => logout({ returnTo: window.location.origin })}>Log Out</Button>
         </MenuItem>
       </Menu>
       </div>
   </div>
 </nav>
+</Container>
 <MenuItems setBooks={props.setBooks}/>
 </div>
 
