@@ -1,8 +1,7 @@
-import bookDetails from "../../classes/bookClass";
+import bookDetails from "../../../classes/bookClass";
 import { useEffect, useState } from "react";
-import BookPageTemplate from "../template/bookPageTemplate";
-import responsiveTheme from "../../theme"
-import { ThemeProvider } from "@mui/styles";
+import BookPageTemplate from "../../templates/bookpagetemplate/bookPageTemplate";
+
 
 
 declare module '@mui/material/Button' {

@@ -1,6 +1,6 @@
-import bookDetails from "../../classes/bookClass";
+import bookDetails from "../../../classes/bookClass";
 import { useEffect, useState } from "react";
-import HomePageTemplate from "../template/homePageTemplate";
+import HomePageTemplate from "../../templates/homepagetemplate/homePageTemplate";
 
 
  function HomePage(){

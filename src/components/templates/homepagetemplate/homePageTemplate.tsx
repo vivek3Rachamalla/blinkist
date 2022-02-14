@@ -1,9 +1,9 @@
 import { Container, Grid } from "@mui/material";
-import BookDetails from "../../classes/bookClass";
-import BookCard from "../molecules/bookCard";
-import SearchBar from "../molecules/searchbar";
-import Fotter from "../organisms/fotter";
-import NavBar from "../organisms/navbar";
+import BookDetails from "../../../classes/bookClass";
+import BookCard from "../../molecules/bookcard/bookCard";
+import SearchBar from "../../molecules/searchbar/searchbar";
+import Fotter from "../../organisms/fotter/fotter";
+import NavBar from "../../organisms/navbar/navbar";
 import banner from "../assert/images/banner.png"
 
 function HomePageTemplate(props:{homeBooks:Array<BookDetails>,

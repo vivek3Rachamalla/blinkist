@@ -1,11 +1,11 @@
-
-import bookDetails from "../../classes/bookClass";
+import BookDetails from "../../../classes/bookClass";
+import BookCard from "./bookCard";
 
 export default {
     title: "molecules"
 };
 
-const details = new bookDetails(1,
+const details = new BookDetails(1,
     "Dropshipping",
     "James Moore",
     "20",
@@ -14,3 +14,4 @@ const details = new bookDetails(1,
     "notstarted");
   
 
+export const bookcard =<BookCard  info={details} readBook={()=>console.log("hellow")}/>

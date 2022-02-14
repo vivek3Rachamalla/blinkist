@@ -1,10 +1,10 @@
 import { Box, Container, Grid, Tab, Tabs, Typography } from "@mui/material";
 import { useState } from "react";
-import BookDetails from "../../classes/bookClass";
-import Header from "../atoms/myLibraryHeader";
-import BookCard from "../molecules/bookCard";
-import Fotter from "../organisms/fotter";
-import NavBar from "../organisms/navbar";
+import BookDetails from "../../../classes/bookClass";
+import Header from "../../atoms/header/myLibraryHeader";
+import BookCard from "../../molecules/bookcard/bookCard";
+import Fotter from "../../organisms/fotter/fotter";
+import NavBar from "../../organisms/navbar/navbar";
 
 function MyLibraryTemplate(props:{books:Array<BookDetails>,
                                   index:number,

@@ -4,11 +4,11 @@ import Logo from "../assert/images/blinkist.png";
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SearchIcon from '@mui/icons-material/Search';
-import MenuItems from './menu'
+import MenuItems from '../menu/menu'
 import { useAuth0 } from "@auth0/auth0-react";
 import React from "react";
 import { makeStyles } from "@mui/styles";
-import responsiveTheme from "../../theme";
+import responsiveTheme from "../../../theme";
 
 
 const useStyles = makeStyles((theme:Theme)=>({

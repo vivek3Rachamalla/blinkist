@@ -1,6 +1,6 @@
 import { Container, createTheme, Grid, Theme, Typography } from "@mui/material";
 import { makeStyles } from '@mui/styles';
-import Icons from "../atoms/icons";
+import Icons from "../../atoms/icons/icons";
 import { useState } from "react";
 
 import ScienceOutlinedIcon from '@mui/icons-material/ScienceOutlined';

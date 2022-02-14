@@ -1,7 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import BookPage from './bookPage';
-import HomePage from './homepage';
-import MyLibrary from './mylibrary';
 
 test("test bookcard page", ()=>{
     render(<BookPage />)
@@ -20,21 +18,5 @@ test("test bookcard page", ()=>{
     expect(buttons[1]).toBeInTheDocument();
     fireEvent.click(screen.queryAllByTestId('menu-icon')[0])
         fireEvent.click(screen.getByText('Finished Reading'))
-    
-})
-
-test("test homePage",()=>{
-    render(<HomePage />)
-    const searchbar = screen.getByPlaceholderText('Search by title or author')
-    fireEvent.change(searchbar)
-})
-
-test("test myLibrary", ()=> {
-    render(<MyLibrary index={0}/>)
-    
-})
-
-test("test myLibrary", ()=> {
-    render(<MyLibrary index={1}/>)
     
 })

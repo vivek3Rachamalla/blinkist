@@ -1,9 +1,9 @@
 import { Box, Button, Container, Grid, Tab, Tabs, Typography } from "@mui/material";
 import { FiClock } from "react-icons/fi";
-import Fotter from "../organisms/fotter";
-import NavBar from "../organisms/navbar";
+import Fotter from "../../organisms/fotter/fotter";
+import NavBar from "../../organisms/navbar/navbar";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import BookDetails from "../../classes/bookClass";
+import BookDetails from "../../../classes/bookClass";
 import React from "react";
 
 function BookPageTemplate(props:{book:BookDetails,

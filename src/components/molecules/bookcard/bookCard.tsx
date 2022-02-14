@@ -2,7 +2,7 @@ import { FiClock } from 'react-icons/fi';
 import { BsThreeDots } from 'react-icons/bs';
 import AddIcon from '@mui/icons-material/Add';
 
-import bookDetails from '../../classes/bookClass';
+import bookDetails from '../../../classes/bookClass';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography';
 import { Grid, Theme } from '@mui/material';
 import { useState } from 'react';
 import { makeStyles } from '@mui/styles';
-import responsiveTheme from '../../theme';
+import responsiveTheme from '../../../theme';
 
 const useStyles = makeStyles((theme:Theme)=>({
   card_style:{

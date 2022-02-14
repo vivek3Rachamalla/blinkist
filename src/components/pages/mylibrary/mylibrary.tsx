@@ -1,8 +1,8 @@
 import { ThemeProvider } from "@mui/styles"
 import { useEffect, useState } from "react"
-import bookDetails from "../../classes/bookClass"
-import responsiveTheme from "../../theme"
-import MyLibraryTemplate from "../template/myLibraryTemplate"
+import bookDetails from "../../../classes/bookClass"
+import responsiveTheme from "../../../theme"
+import MyLibraryTemplate from "../../templates/mylibrarytemplate/myLibraryTemplate"
 
 
 function MyLibrary(props:{index:number}){
