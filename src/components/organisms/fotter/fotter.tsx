@@ -1,6 +1,6 @@
 import { Container, Grid, List, ListItem, ListItemButton, ListItemText, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import Logo from "../assert/images/blinkist.png";
+import Logo from "./blinkist.png";
 
 const useStyles = makeStyles({
     fotter_backgroung:{

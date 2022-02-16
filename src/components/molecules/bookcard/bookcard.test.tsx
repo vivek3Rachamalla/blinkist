@@ -32,10 +32,7 @@ const bookInfo = {
   test('book card test', ()=>{
     render(<BookCard  info={bookInfo} readBook={()=>console.log("hellow")}/>)
     const card = screen.getByTestId("book-card")
-    const button = screen.getByRole("button")
     expect(card).toBeInTheDocument()
-    expect(button).toBeInTheDocument()
-    fireEvent.click(button)
     fireEvent.click(screen.getByTestId("book-card-click"))
     
 })

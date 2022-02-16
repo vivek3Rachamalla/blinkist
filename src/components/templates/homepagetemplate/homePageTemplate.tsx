@@ -4,7 +4,7 @@ import BookCard from "../../molecules/bookcard/bookCard";
 import SearchBar from "../../molecules/searchbar/searchbar";
 import Fotter from "../../organisms/fotter/fotter";
 import NavBar from "../../organisms/navbar/navbar";
-import banner from "../assert/images/banner.png"
+import banner from "./banner.png"
 
 function HomePageTemplate(props:{homeBooks:Array<BookDetails>,
                                 setHomeBooks:(books:Array<BookDetails>)=> void,

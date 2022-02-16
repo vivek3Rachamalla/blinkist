@@ -1,6 +1,6 @@
 import { Avatar,Button,Container,IconButton,Link, Menu, MenuItem, Theme, Typography } from "@mui/material";
 import { useState } from "react";
-import Logo from "../assert/images/blinkist.png";
+import Logo from "./blinkist.png";
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SearchIcon from '@mui/icons-material/Search';

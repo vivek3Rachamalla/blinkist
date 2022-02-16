@@ -70,12 +70,12 @@ function BookCard(props:{info: bookDetails, readBook:()=>void }){
         <Typography gutterBottom variant="caption" component="div">
           <FiClock/> {props.info.time}-minute read
         </Typography>
-        {(status==="started")? <BsThreeDots size={35} className={classes.dot_button}/>:<div></div>}
+        {(status==="started")? <BsThreeDots size={35} className={classes.dot_button}/>:<div ></div>}
       </CardContent>
       </div>
      {(status==="notstarted")?<Button variant="text" onClick={()=>onClick()} fullWidth startIcon={<AddIcon />}><Typography variant="body1">Add to library</Typography></Button>:
                               (status==="finished")?<Button variant="text" onClick={()=>onClick()} fullWidth ><Typography variant="body1">Read again</Typography></Button>:
-                                                    <div style={{height:"15px", background:"#DFE8F6",paddingTop:"15px"}}></div>
+                                                    <div style={{ paddingTop:"15px"}}><div style={{background:"#F1F6F4"}}><div style={{height:"15px",width:"75%" , background:"#DFE8F6"}}></div></div></div>
                                                     }                                              
     </Card>
     </Grid>
